@@ -1,0 +1,16 @@
+# file open
+f=open("simple.txt")
+print(f.read())
+
+#write file
+
+f=open("simple.txt"."w")
+
+print(f.write("welcome to python\n"))
+
+#append
+
+f=open("simple.txt")
+a=f.write("welcome")
+
+f.close()
