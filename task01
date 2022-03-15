@@ -1,0 +1,16 @@
+a = [1, 2, 7, 8]
+b = [9, 7, 4, 8]
+c = [7, 8, 3, 1]
+
+def insertsecofsets(a,b,c):
+    x= set(a)
+    y= set(b)
+    z= set(c)
+    set1=x.intersection(y)
+    arr2=set1.intersection(z)
+    z=list(arr2)
+    return z
+
+print(insertsecofsets(a,b,c))
+
+
