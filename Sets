@@ -1,0 +1,27 @@
+a=set('abcdefgh')
+b=set('abcdefghl')
+print(a)
+
+a=set('abcdefgh')
+b=set('abcdefghl')
+print(b-a)
+
+a=set('abcdefgh')
+b=set('abcdefghl')
+print(a|b)
+
+a=set('abcdefgh')
+b=set('abcdefghl')
+print(a&b)
+
+a=set('abcdefgh')
+b=set('abcdefghl')
+print(a^b)
+
+#Output
+
+{'h', 'a', 'd', 'b', 'e', 'g', 'c', 'f'}
+{'l'}
+{'h', 'a', 'd', 'b', 'e', 'g', 'c', 'f', 'l'}
+{'h', 'a', 'd', 'b', 'e', 'g', 'c', 'f'}
+{'l'}
