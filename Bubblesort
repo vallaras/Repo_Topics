@@ -1,0 +1,13 @@
+arr=[5,4,1,7,8]
+a=[]
+for j in range(0,len(arr)):
+    for i in range(0,len(arr)-1):
+        if arr[i] > arr[i+1]:
+         arr[i],arr[i+1] = arr[i+1],arr[i]
+for i in range (0):
+    arr.append(arr[i])
+    print(arr[i], end=" ")
+print(arr)
+
+#output
+[1, 4, 5, 7, 8]
