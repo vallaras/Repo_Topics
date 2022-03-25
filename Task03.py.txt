@@ -1,0 +1,25 @@
+lst = []
+for j in range(0,3):
+    a=int(input("enter the movie num:"))
+    b=input("enter the movie name:")
+    c=int(input("enter the year:"))
+    d=input("enter the Actor:")
+    lst.append([a, b, c, d])
+    
+print(lst)
+
+#output
+enter the movie num:1
+enter the movie name:beast
+enter the year:2022
+enter the Actor:vijay
+enter the movie num:2
+enter the movie name:master
+enter the year:2020
+enter the Actor:vijay
+enter the movie num:3
+enter the movie name:kaithi
+enter the year:2019
+enter the Actor:karthi
+[[1, 'beast', 2022, 'vijay'], [2, 'master', 2020, 'vijay'], [3, 'kaithi', 2019, 'karthi']]
+
