@@ -1,0 +1,10 @@
+a=[[1, 'beast', 2022, 'vijay'], [2, 'master', 2020, 'vijay'], [3, 'kaithi', 2019, 'karthi']]
+x=int(input("enter the file Year:"))
+for i in a:
+    for j in i:
+        if j==x:
+          print(i)
+        else:
+            print("No File")
+
+

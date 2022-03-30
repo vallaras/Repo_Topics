@@ -1,0 +1,94 @@
+class person():
+    def __init__(self,name,id):
+        self.name=name
+        self.id=id
+    def details(self):
+        print(f"name={self.name},id={self.id}")
+class student(person):
+    def __init__(self,name,id,post,fees):
+        self.post=post
+        self.fees=fees
+        person.__init__(self,name,id)
+    def details1(self):
+        print(f"post={self.post},fees={self.fees}")
+a=student('valla',10,'Intern',1000)
+a.details()
+a.details1()
+
+
+#output
+name=valla,id=10,post=Intern,fees=1000
+
+
+
+#polymorphism with inheritance
+
+class bird:
+    def intro(self):
+        print("there are many types of birds")
+    def flight(self):
+        print("Most of the birds can fly but some cannot")
+class sparrow(bird):
+    def flight(self):
+        print("sparrow can fly.")
+class ostrich(bird):
+    def flight(self):
+        print("ostrich cannot fly")
+obj=bird()
+obj=sparrow()
+obj=ostrich()
+obj.intro()
+obj.flight()
+obj.intro()
+obj.flight()
+obj.intro()
+obj.flight()
+
+
+#output
+there are many types of birds
+ostrich cannot fly
+there are many types of birds
+ostrich cannot fly
+there are many types of birds
+ostrich cannot fly
+
+# parent class
+class Bird:
+    
+    def __init__(self):
+        print("Bird is ready")
+
+    def whoisThis(self):
+        print("Bird")
+
+    def swim(self):
+        print("Swim faster")
+
+# child class
+class Penguin(Bird):
+
+    def __init__(self):
+        # call super() function
+        super().__init__()
+        print("Penguin is ready")
+
+    def whoisThis(self):
+        print("Penguin")
+
+    def run(self):
+        print("Run faster")
+
+peggy = Penguin()
+peggy.whoisThis()
+peggy.swim()
+peggy.run()
+
+
+#output
+
+Bird is ready
+Penguin is ready
+Penguin
+Swim faster
+Run faster
