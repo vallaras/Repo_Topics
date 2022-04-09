@@ -12,3 +12,9 @@ class Department(Employee):
 emp = Employee()
 print(emp.x)
 emp.func_msg()
+dept = Department()
+print(dept.a)
+print(dept.b)
+dept.func_message()
+dept.func_changed()
+
