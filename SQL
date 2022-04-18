@@ -1,0 +1,57 @@
+--create table
+
+create table employees(emp_id int primary key,
+emp_name varchar(50),
+designation varchar(100),
+salary int)
+
+--inserting
+
+insert into employees(emp_id,emp_name,designation,salary)values(1,'vallarasu','devloper',400000)
+insert into employees(emp_id,emp_name,designation,salary)values(2,'frathunan','product',500000)
+insert into employees(emp_id,emp_name,designation,salary)values(3,'santhosh','design',500000)
+
+select * from employees
+select emp_name,designation from employees
+select salary from employees
+
+-- update
+update employees
+set emp_name='Gopi'
+where emp_id =1
+
+update employees
+set department='cse'
+where emp_id =1
+
+update employees
+set department='Mech'
+where emp_id =2
+
+update employees
+set department='Mech'
+where emp_id =3
+
+
+
+--ALTER 
+alter table employees
+add department varchar;
+--DROP 
+alter table employees 
+drop salary 
+
+--Group by
+select emp_name,count(*)
+from employees
+group by designation 
+
+--HAVING 
+select emp_name,count(*)
+from employees
+group by department
+HAVING COUNT(*) > 1;
+
+
+
+select * from employees
