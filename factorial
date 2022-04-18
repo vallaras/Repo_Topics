@@ -1,0 +1,13 @@
+n=int(input("Enter the value:"))
+fact = 1
+while(n > 1):
+	fact=fact * n
+	n -= 1
+print(fact)
+
+
+#result
+Enter the value:5
+120
+
+
