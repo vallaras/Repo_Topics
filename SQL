@@ -102,6 +102,51 @@ select * from B;
 select * from A x join B;
 
 
+--inner join
+
+create table D(emp_id int primary key,
+emp_name varchar(50));
+create table E(emp_id int primary key,
+emp_job varchar(50));
+insert into D(emp_id,emp_name)values(20,'joy'),(30,'nick'),(40,'jack'),(50,'mint')
+insert into E(emp_id,emp_job)values(20,'fresher'),(50,'triner'),(44,'prodect'),(55,'import')
+
+
+SELECT * FROM D x JOIN E y ON y.emp_id = x.emp_id
+SELECT * FROM D x JOIN E y ON y.emp_name = x.emp_name
+ 
+alter table E
+add emp_name varchar;
+alter table E 
+drop emp_job 
+
+update E
+set emp_name='joy'
+where emp_id =20
+update E
+set emp_name='jack'
+where emp_id =44
+update E
+set emp_name='mananay'
+where emp_id =55
+update E
+set emp_name='vetri'
+where emp_id =50
+
+--LEFT JOIN 
+
+SELECT * FROM D x LEFT JOIN E y ON y.emp_id = x.emp_id;
+
+--right join
+
+SELECT * FROM E x RIGHT JOIN D y ON y.emp_id = x.emp_id;
+
+
+select * from D;
+select * from E;
+
+
+
 
 --ALTER 
 alter table employees
