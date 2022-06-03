@@ -1,0 +1,21 @@
+from flask import *
+app = Flask(__name__)
+
+
+@app.route('/')
+def homepage():
+    return "Hello Flask"
+
+@app.route('/stu')
+def students():
+    return "Hii Students"
+
+
+
+
+if __name__ == "__main__":
+    app.run(debug=True,port=5000)
+
+
+
+
