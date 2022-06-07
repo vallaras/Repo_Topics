@@ -32,7 +32,19 @@ opj.func_msg()
 a=math_fun("ivana",11,18)
 a.func_msg()
 
+class Person:
+  def __init__(self, fname, lname):
+    self.fname = fname
+    self.lname = lname
 
+
+  def printname(self):
+    print(self.fname, self.lname)
+
+#Use the Person class to create an object, and then execute the printname method:
+
+x = Person("vallarasu", "M")
+x.printname()
 class num:
     def __init__(self,fullname,emp_id,age):
         self.fullname=fullname
