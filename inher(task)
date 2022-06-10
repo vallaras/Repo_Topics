@@ -1,0 +1,17 @@
+class A:
+    def __init__(self):
+        print("prent clss constructor")
+    def parantclass(self):
+        print("welcome to python parent class")
+        print("______")
+class B(A):
+    def __init__(self):
+        A.__init__(self)
+        A.parantclass(self)
+        print("child class constructor")
+
+    def childclass(self):
+        print("Welcome to python child class 2.0")
+        print("________")
+childobj=B()
+childobj.childclass()
