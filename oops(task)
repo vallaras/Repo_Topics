@@ -1,0 +1,23 @@
+class grandfather:
+    def __init__(self):
+        print("welcome to school")
+    def childclass(self):
+        print("ARM College")
+class father(grandfather):
+    def __init__(self):
+        grandfather.__init__(self)
+        grandfather.childclass(self)
+        print("best of luck")
+    def classmate(self):
+        print("wel come to fatherclass")
+
+
+class child(father):
+    def __init__(self):
+        father.__init__(self)
+        father.classmate(self)
+        print('welcome')
+    def mother(self):
+        print("cool")
+childobj=child()
+childobj.mother
