@@ -1,0 +1,42 @@
+How many matches we've got in the dataset?
+SELECT COUNT(id)  FROM matches
+result: 636
+How many seasons we've got in the dataset?
+SELECT DISTINCT season FROM matches
+result:10
+2017
+2008
+2009
+2010
+2011
+2012
+2013
+2014
+2015
+2016
+
+Which Team had won by maximum runs?
+SELECT team1 ,team2,win_by_runs  FROM matches WHERE  win_by_runs= (SELECT MAX(win_by_runs) FROM matches)
+Mumbai Indians Delhi Daredevils 98
+
+Which Team had won by maximum wicket?
+SELECT team1 ,team2,win_by_wickets  FROM matches WHERE  win_by_wickets= (SELECT MAX(win_by_wickets) FROM matches)  
+
+Kolkata Knight Riders
+
+Which Team had won by closest Margin (minimum runs)?
+
+58                  Mumbai Indians
+105                Kings XI Punjab
+163                Kings XI Punjab
+344               Delhi Daredevils
+350                 Mumbai Indians
+518            Chennai Super Kings
+598                  Gujarat Lions
+614    Royal Challengers Bangalore
+
+Which Team had won by minimum wicket?
+SELECT team1 ,team2,win_by_wickets  FROM matches WHERE  win_by_wickets= (SELECT MIN(win_by_wickets) FROM matches)  
+
+Royal Challengers Bangalore 0
+
