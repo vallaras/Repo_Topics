@@ -1,28 +1,32 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>student information</title>
+    <title>List</title>
 </head>
 <body>
 
-<h3>student Information</h3>
+<h3>Employee Information</h3>
 <table border=5>
     <thead>
-        <td>name</td>
-        <td>age</td>
-
+        <td>ID</td>
+        <td>Name</td>
+        <td>Email</td>
+        <td>Address</td>
     </thead>
 
     {% for row in rows %}
 
         <tr>
+            <td>{{row["id"]}}</td>
             <td>{{row["name"]}}</td>
-            <td>{{row["age"]}}</td>
+            <td>{{row["email"]}}</td>
+            <td>{{row["address"]}}</td>
         </tr>
 
     {% endfor %}
 </table>
 <br><br>
+
 <a href="/">Go back to home page</a>
 
 </body>
