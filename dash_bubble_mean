@@ -1,0 +1,5 @@
+fig = px.scatter(df_t.query(f"Weight<={df_t['Weight'].mean()}"),
+                 x="Weight", y="Product",
+            size="Inches", color="Product",
+                 hover_name="Memory", log_x=True,size_max=60)
+fig.show()
