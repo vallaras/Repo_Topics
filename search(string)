@@ -1,0 +1,10 @@
+with open(r"Hash_task.py", 'r') as f:
+    count = 0
+    for index, line in enumerate(f):
+        if 'print' and 'self.insert_query(study, subject, payload)' in line:
+            A=("Line{}:{}".format(index, line, line.strip()))
+            L = "Hash_task.py\n" + A
+            count = count + 1           
+new_file = open('netw1.py', 'w')
+new_file.writelines(L)
+new_file.close()    
